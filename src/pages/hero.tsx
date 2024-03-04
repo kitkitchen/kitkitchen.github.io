@@ -12,8 +12,9 @@ const Hero = () => {
                 backgroundColor: "rgb(2,0,36)",
                 flex: 1,
                 background:
-                    "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(248,86,6,1) 100%)",
-                color: "white",
+                    // "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(248,86,6,1) 100%)",
+                    "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,63,1,1) 100%)",
+                color: "#F9F6EE",
             }}
         >
             <p

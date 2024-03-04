@@ -4,7 +4,6 @@ export default function Index() {
     return (
         <Layout title="Home">
             <Hero />
-            
         </Layout>
     );
 }
