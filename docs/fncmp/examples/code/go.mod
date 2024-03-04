@@ -3,6 +3,7 @@ module github.com/kitkitchen/docs
 go 1.21.5
 
 require (
+	github.com/a-h/templ v0.2.598 // indirect
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
 	github.com/charmbracelet/lipgloss v0.9.1 // indirect
 	github.com/charmbracelet/log v0.3.1 // indirect
