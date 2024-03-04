@@ -1,1 +1,1 @@
-[Read the docs <--](https://kitkitchen.github.io/docs)
+[Read the docs <--](https://kitkitchen.github.io)

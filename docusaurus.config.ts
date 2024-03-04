@@ -37,15 +37,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -68,67 +61,30 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'fncmpSidebar',
           position: 'left',
-          label: 'fnCmp',
+          label: 'Docs',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'mnemoSidebar',
+          to: '/github',
           position: 'left',
-          label: 'mnemo',
+          label: 'Github',
         },
-        {to: '/blog', label: 'blog', position: 'left'},
-        {
-          href: 'https://github.com/kitkitchen',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'mnemoSidebar',
+        //   position: 'left',
+        //   label: 'mnemo',
+        // },
+        // {
+        //   href: 'https://github.com/kitkitchen',
+        //   label: 'GitHub',
+        //   position: 'left',
+        // },
       ],
     },
-    // footer: {
-    //   style: 'dark',
-    //   links: [
-    //     {
-    //       title: 'Docs',
-    //       items: [
-    //         {
-    //           label: 'Tutorial',
-    //           to: '/docs/intro',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: 'Community',
-    //       items: [
-    //         {
-    //           label: 'Stack Overflow',
-    //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-    //         },
-    //         {
-    //           label: 'Discord',
-    //           href: 'https://discordapp.com/invite/docusaurus',
-    //         },
-    //         {
-    //           label: 'Twitter',
-    //           href: 'https://twitter.com/docusaurus',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: 'More',
-    //       items: [
-    //         {
-    //           label: 'Blog',
-    //           to: '/blog',
-    //         },
-    //         {
-    //           label: 'GitHub',
-    //           href: 'https://github.com/kitkitchen',
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   copyright: `Copyright © ${new Date().getFullYear()} Kit Kitchen. Built with Docusaurus.`,
-    // },
+    footer: {
+      style: 'light',
+      copyright: `Copyright © ${new Date().getFullYear()} Kit Kitchen.`,
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

@@ -1,0 +1,47 @@
+---
+title: About
+---
+
+# fnComponent - Functional Components in Go
+
+>Developers wrap structs that implement the Component interface, such as a [templ](https://templ.guide) component, and use them
+to create SPA-like components and applications with relative ease.
+<p>
+    <i>Sean Burman</i>
+    <br/>
+    <i>3 March 2024</i>
+</p>
+## A wrapper around familiar syntax
+
+[templ](https://templ.guide) allows us to create components with html syntax.
+```go title="component.templ"
+package main
+
+templ Button(label string) {
+    <button>{label}</button>
+}
+
+templ Greeting(who string) {
+  <h1>Hello, {who}!</h1>
+}
+```
+With this special handler, we can render the button component in the client browser.
+```go title="main.go"
+var button = fncmp.NewFn(Button("Click me!"))
+```
+```go title="main.go"
+func handleClick(context.Context) fncmp.FnComponent {
+	return fncmp.NewFn(Greeting("Sean"))
+}
+
+func HandleMainFn(ctx context.Context) fncmp.FnComponent {
+	return button.WithEvents(handleClick, fncmp.OnClick)
+}
+```
+
+Package fncmp is a simple and lightweight package for creating functional components in Go. \
+Components are rendered in place in the DOM and may be updated in response to both client and server side events.
+This is accomplished by converting a Component to html and wrapping it in meta data. Meta data is parsed by a javascript API and likewise stored on the server.
+
+Developers wrap structs that implement the Component interface, such as a [templ](https://templ.guide) component, and use them
+to create SPA-like components and applications with relative ease.
