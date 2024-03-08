@@ -1,5 +1,5 @@
 ---
-title: About
+title: fnComponent - Functional Components in Go
 ---
 
 # fnComponent - Functional Components in Go
@@ -23,8 +23,7 @@ templ Greeting(who string) {
 With this special handler, we can render the button component in the client browser.
 ```go title="main.go"
 var button = fncmp.NewFn(Button("Click me!"))
-```
-```go title="main.go"
+
 func handleClick(context.Context) fncmp.FnComponent {
 	return fncmp.NewFn(Greeting("Sean"))
 }

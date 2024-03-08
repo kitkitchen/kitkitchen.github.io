@@ -21,6 +21,7 @@ const Hero = () => {
                 style={{
                     fontSize: "60px",
                     fontWeight: "bold",
+                    textShadow: "-4px -4px 10px #000000",
                 }}
             >
                 fn(Component)
@@ -29,9 +30,10 @@ const Hero = () => {
                 style={{
                     fontSize: "20px",
                     opacity: 0.6,
+                    textShadow: "-4px -4px 10px #000000",
                 }}
             >
-                for web and desktop applications written in Go.
+                for modern web and desktop applications written in Go.
             </p>
             <div
                 style={{
@@ -40,8 +42,8 @@ const Hero = () => {
                     gap: "20px",
                 }}
             >
-                <Button href="/docs/fncmp/intro" label="Get Started" />
-                <Button href="/post" label="Learn more" />
+                <Button href="/docs/fncmp" label="Get Started" />
+                <Button href="/article" label="Learn more" />
             </div>
         </div>
     );

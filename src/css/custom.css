@@ -7,15 +7,15 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: rgb(9, 2, 135);
-  --ifm-color-primary-dark: rgb(47, 43, 117);
-  --ifm-color-primary-darker: rgb(35, 32, 90);
-  --ifm-color-primary-darkest: rgb(34, 30, 125);
-  --ifm-color-primary-light: rgb(51, 46, 135);
-  --ifm-color-primary-lighter: rgb(43, 39, 121);
-  --ifm-color-primary-lightest: rgb(41, 35, 148);
+  --ifm-color-primary: #de4904;
+  --ifm-color-primary-dark: #79310f;
+  --ifm-color-primary-darker: #752701;
+  --ifm-color-primary-darkest: #5b1d01;
+  --ifm-color-primary-light: #cc5219;
+  --ifm-color-primary-lighter: #d85112;
+  --ifm-color-primary-lightest: #f05710;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgb(2,0,36);
+  --docusaurus-highlighted-code-line-bg: rgb(251, 236, 215);
   /* --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); */
 }
 
